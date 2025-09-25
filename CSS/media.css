@@ -1,0 +1,210 @@
+/* hero section  */
+
+@media (min-width: 992px) and (max-width:1400px) {
+  .hero-section-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width:991px) {
+  .hero-section-heading {
+    font-size: 2rem;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .hero-section-para {
+    font-size: 1rem !important;
+    /* 16px */
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .hero-section-para {
+    font-size: 1.4rem !important;
+    /* 20px */
+  }
+}
+
+
+@media (min-width: 992px) {
+  .hero-section-para {
+    font-size: 1.8rem !important;
+    /* 32px */
+  }
+}
+
+/* hero section end */
+
+/* About section  */
+
+@media (max-width: 777px) {
+  .img-fluid {
+    padding: 0 !important;
+    border-radius: 1.5rem !important;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-fluid {
+    padding: 0 !important;
+    border-radius: 1.5rem !important;
+
+  }
+}
+
+@media (min-width: 992px) {
+  .img-fluid {
+    padding: 0 !important;
+    border-radius: 1.5rem !important;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-para {
+    font-size: 1.4rem !important;
+
+  }
+}
+
+@media (min-width: 992px) {
+  .about-para {
+    font-size: 1.8rem !important;
+
+  }
+}
+
+/* project-section-card  */
+
+/* Tablet screen ke liye (768px - 991px) */
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  
+  .card .card-text {
+    display: none;
+  }
+
+ 
+  .card .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  
+  .card {
+    width: 14rem !important;   /* default 14rem se chota */
+    
+    height: auto;  /* auto rakho taki responsive bane */
+  
+    margin: 0 !important;
+  }
+
+ 
+  .card img {
+    height: 7.5rem;
+    
+    object-fit: cover;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .card .card-text {
+    display: none;
+  }
+
+  .card .btn {
+    display: none;
+  }
+
+  .card {
+    width: 16rem !important;
+   
+    height: auto;
+    
+    margin: 0 !important;
+  }
+
+  .card img {
+    height: 7rem;
+    
+    object-fit: cover;
+  }
+
+  .card .card-title {
+    margin-bottom: 0 !important;
+
+  }
+
+  .container div {
+    margin-top: 0.25rem !important;
+  }
+}
+
+
+@media (max-width:576px) {
+  .card .card-text {
+    display: none;
+  }
+
+  .card .btn {
+    display: none;
+  }
+
+  .card {
+    width: 16rem !important;
+  
+    height: auto;
+    
+    margin: 0 !important;
+  }
+
+  .card img {
+    height: 7rem;
+    
+    object-fit: cover;
+  }
+
+  .card .card-title {
+    margin-bottom: 0 !important;
+
+  }
+
+  .container div {
+    margin-top: 0.25rem !important;
+    
+  }
+
+}
+
+
+/* footer section  */
+@media(min-width:576px) and (max-width:767px) {
+  .footer-heading {
+    font-size: 1.5rem;
+  }
+
+  .footer-para {
+    font-size: 0.8rem;
+
+  }
+}
+
+
+
+@media(max-width:576px) {
+  .footer-heading {
+    font-size: 1.2rem;
+  }
+
+  .footer-para {
+    font-size: 0.6rem;
+
+  }
+}

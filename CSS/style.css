@@ -1,0 +1,430 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin:0;
+  padding: 0;
+}
+
+/* Start from here with hero image  */
+
+.container-fluid {
+  height: 100vh;
+  padding: 0 !important;
+
+}
+
+.hero-image {
+  background-image: url('../images/hero-img.jpg');
+  background-size: cover;
+  height: 75vh;
+}
+
+/* navbar section start */
+
+#navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .navbar-brand {
+  color: #212529;
+}
+
+#navbar .navbar-brand:hover {
+  color: burlywood;
+  transition: color 0.3s ease-out;
+}
+
+/* Navbar links */
+
+#navbar .nav-link {
+  color: #343a40 !important;
+  transition: color 0.3s ease;
+}
+
+#navbar .nav-link:hover {
+  color: burlywood !important;
+}
+
+/* input form  */
+
+.form-control {
+  padding: 0.37rem !important;
+}
+
+/* search-section  */
+
+.search-section {
+  border-radius: 0.25rem;
+}
+
+.search-section .search-icon {
+  font-size: 1.2rem;
+  background-color: white;
+
+}
+
+.search-section .search-icon:hover {
+  color: burlywood;
+}
+
+.search-btn {
+  border: 0.05rem solid black;
+  border-radius: 0.25rem;
+  background-color: white
+}
+
+.search-btn a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.search-btn:hover {
+  background-color: burlywood;
+}
+
+/* navbar section end  */
+
+/* hero section  */
+
+.resume-btn {
+  border: 0.05rem solid black;
+  border-radius: 0.25rem;
+  background-color: white;
+  margin-top: 3rem;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: popUpBtn 2s ease-out forwards;
+  animation-delay: 4s;
+}
+
+.resume-btn a {
+  color: #212529;
+  text-decoration: none;
+}
+
+@keyframes popUpBtn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.resume-btn:hover {
+  background-color: burlywood;
+}
+
+.hero-section-heading {
+  opacity: 0;
+  animation: popUp 2s ease-out forwards;
+}
+
+
+
+.hero-section-para span {
+  opacity: 0;
+  display: inline-block;
+  animation: wordFade 0.6s ease forwards;
+}
+
+.hero-section-para span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.hero-section-para span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.hero-section-para span:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.hero-section-para span:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.hero-section-para span:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
+.hero-section-para span:nth-child(6) {
+  animation-delay: 3s;
+}
+
+.hero-section-para span:nth-child(7) {
+  animation-delay: 3.5s;
+}
+
+.hero-section-para span:nth-child(8) {
+  animation-delay: 4s;
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes wordFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* hero section end  */
+
+/* SliderContainer start  */
+
+.tech-slider {
+  height: 25vh;
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+
+  gap: 6rem;
+  animation: scroll 15s linear infinite;
+  /* slower scroll for smooth effect */
+  height: 100%;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75%;
+  padding: 1.6rem;
+}
+
+.slide img {
+  /* width: 8rem; */
+  height: 100%;
+  object-fit: contain;
+}
+
+.slide p {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Continuous scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+
+  /* translate half because of duplicate slides */
+}
+
+/* Slider Container end  */
+
+/* About section start here  */
+
+#about {
+  height: 100vh;
+}
+
+.about-bg-image {
+  background-image: url('../images/about-bg-img.png');
+  background-size: cover;
+}
+
+.about-heading {
+  height: 10vh;
+  width: 100vw;
+
+}
+
+.about-section-container {
+  padding: 0 !important;
+  ;
+  height: 80vh;
+  width: 100vw;
+  border-top: 0.25rem solid #212529;
+  border-bottom: 0.25rem solid #212529;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px 3px silver;
+
+}
+
+/* About section start end  */
+
+/* project-section  */
+
+#projects {
+  height: 100vh;
+}
+
+.project-bg-image {
+  background-image: url('../images/project-bg-img.png');
+  background-size: cover;
+  background-position: center;
+  /* image ko center se crop karna */
+  background-repeat: no-repeat;
+  /* repeat na ho */
+  height: 100%;
+  /* parent ki full height lena */
+  width: 100%;
+}
+
+.project-heading {
+  height: 10vh;
+  width: 100vw;
+}
+
+.project-container {
+  padding: 0 !important;
+  min-height: 75vh;
+  width: 100vw;
+  border-top: 0.25rem solid #212529;
+  border-bottom: 0.25rem solid #212529;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px 3px silver;
+  backdrop-filter: blur(3px);
+
+}
+
+
+.card-img-top {
+  height: 13.1rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-body {
+  background-image: url('../images/card-bg-img.png');
+}
+
+.card-body-2 {
+  background-image: url('../images/card-bg-img-2.png');
+}
+
+.card-body-3 {
+  background-image: url('../images/card-bg-img-3.png');
+}
+
+.card-title {
+  color: black;
+  /* Dark Blue */
+  font-weight: bold;
+  text-shadow:
+    0 0 0 #1B3A4B,
+    /* Base subtle shadow */
+    0 0 2 0px silver,
+    /* Cyan glow */
+    0 0 0 blue,
+    /* Stronger glow */
+    0 0 10px white;
+  /* Outer glow */
+}
+
+.card-text {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: gold;
+  /* Dark Blue */
+  font-weight: bold;
+  text-shadow:
+    0 0 10px #1B3A4B,
+    /* Base subtle shadow */
+    0 0 1px gold,
+    /* Cyan glow */
+    0 0 10px blue,
+    /* Stronger glow */
+    0 0 12px white;
+  /* Outer glow */
+
+}
+
+.card a {
+  background-color: white;
+  color: #212529;
+  border: 0.1rem solid black;
+}
+
+.card a:hover {
+  background-color: burlywood;
+}
+
+#contact {
+  height: 100vh;
+}
+
+.contact-bg-image {
+  background-image: url('../images/Contact-pg-bg-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* image ko center se crop karna */
+  height: 100%;
+  /* repeat na ho */
+  width: 100%;
+  /* About section start here  */
+}
+
+.contact-heading {
+  height: 10vh;
+  width: 100vw;
+}
+
+.contact-container {
+  padding: 0 !important;
+  min-height: 65vh;
+  width: 100vw;
+  border-top: 0.25rem solid #212529;
+  border-bottom: 0.25rem solid #212529;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px 3px silver;
+  /* backdrop-filter: blur(3px); */
+
+}
+
+/* Footer start  */
+
+.footer-section {
+  height: 12vh;
+  background-color: antiquewhite;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  margin-top: 0.5rem !important;
+
+}
+
+.footer-para {
+  font-size: 1rem;
+  font-family: sans-serif;
+
+}
+
+/* footer end  */
