@@ -274,9 +274,9 @@
 
 }
 
-/* About section start end  */
+/* About section start end  
 
-/* project-section  */
+project-section 
 
 #projects {
   height: 100vh;
@@ -286,11 +286,11 @@
   background-image: url('../images/project-bg-img.png');
   background-size: cover;
   background-position: center;
-  /* image ko center se crop karna */
+  
   background-repeat: no-repeat;
-  /* repeat na ho */
+
   height: 100%;
-  /* parent ki full height lena */
+ 
   width: 100%;
 }
 
@@ -332,17 +332,17 @@
 
 .card-title {
   color: black;
-  /* Dark Blue */
+
   font-weight: bold;
   text-shadow:
     0 0 0 #1B3A4B,
-    /* Base subtle shadow */
+    
     0 0 2 0px silver,
-    /* Cyan glow */
+
     0 0 0 blue,
-    /* Stronger glow */
+    
     0 0 10px white;
-  /* Outer glow */
+  
 }
 
 .card-text {
@@ -350,17 +350,17 @@
   font-style: italic;
   font-weight: 600;
   color: gold;
-  /* Dark Blue */
+  
   font-weight: bold;
   text-shadow:
     0 0 10px #1B3A4B,
-    /* Base subtle shadow */
+    
     0 0 1px gold,
-    /* Cyan glow */
+  
     0 0 10px blue,
-    /* Stronger glow */
+
     0 0 12px white;
-  /* Outer glow */
+  
 
 }
 
@@ -383,11 +383,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* image ko center se crop karna */
+
   height: 100%;
-  /* repeat na ho */
+
   width: 100%;
-  /* About section start here  */
+ 
 }
 
 .contact-heading {
@@ -403,9 +403,247 @@
   border-bottom: 0.25rem solid #212529;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 8px 3px silver;
-  /* backdrop-filter: blur(3px); */
+
+
+} 
+
+
+/* project-section  */
+
+#projects {
+  height: 100vh;
+}
+
+.project-bg-image {
+  background-image: url('../images/project-bg-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.project-heading {
+  height: 10vh;
+  width: 100vw;
+}
+
+
+/* UPDATED PROJECT CONTAINER */
+
+.project-container {
+
+  padding: 20px !important;
+
+  height: 75vh;
+
+  width: 100vw;
+
+  border-top: 0.25rem solid #212529;
+  border-bottom: 0.25rem solid #212529;
+
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 8px 3px silver;
+
+  backdrop-filter: blur(3px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
 
 }
+
+
+/* SCROLLBAR */
+
+.project-container::-webkit-scrollbar {
+
+  width: 0.5rem;
+}
+
+.project-container::-webkit-scrollbar-thumb {
+
+  background: silver;
+
+  border-radius: 0.6rem;
+}
+
+.project-container::-webkit-scrollbar-track {
+
+  background: transparent;
+}
+
+
+/* CARD IMAGE */
+
+.card-img-top {
+
+  height: 13.1rem;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* CARD BODY */
+
+.card-body {
+
+  background-image: url('../images/card-bg-img-1.png');
+}
+
+.card-body-2 {
+
+  background-image: url('../images/card-bg-img-2.png');
+}
+
+.card-body-3 {
+
+  background-image: url('../images/card-bg-img-3.png');
+}
+
+.card-body-4 {
+
+  background-image: url('../images/card-bg-img-4.png');
+}
+
+
+/* CARD TITLE */
+
+.card-title {
+
+  color: black;
+
+  font-weight: bold;
+
+  text-shadow:
+    0 0 0 #1B3A4B,
+    0 0 2px silver,
+    0 0 0 blue,
+    0 0 10px white;
+}
+
+
+/* CARD TEXT */
+
+.card-text {
+
+  font-size: 1rem;
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  color: gold;
+
+  text-shadow:
+    0 0 10px #1B3A4B,
+    0 0 1px gold,
+    0 0 10px blue,
+    0 0 12px white;
+}
+
+
+/* BUTTON */
+
+.card a {
+
+  background-color: white;
+
+  color: #212529;
+
+  border: 0.1rem solid black;
+}
+
+.card a:hover {
+
+  background-color: burlywood;
+}
+
+/* project section end here  */
+/* Contact Section start  */
+
+#contact {
+
+  height: 100vh;
+}
+
+.contact-bg-image {
+
+  background-image: url('../images/contact-pg-bg-img.png');
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  height: 100%;
+
+  width: 100%;
+}
+
+.contact-heading {
+
+  height: 10vh;
+
+  width: 100vw;
+}
+
+.contact-container {
+
+  padding: 20px !important;
+
+  min-height: 65vh;
+
+  width: 100vw;
+
+  border-top: 0.25rem solid #212529;
+
+  border-bottom: 0.25rem solid #212529;
+
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 8px 3px silver;
+
+  backdrop-filter: blur(3px);
+}
+
+.contact-link {
+
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 1.7rem;
+
+  font-weight: 600;
+
+  margin: 20px 0;
+
+  transition: 0.3s ease;
+
+  text-shadow:
+    0 0 5px black,
+    0 0 10px blue,
+    0 0 15px white;
+}
+
+
+.contact-link i {
+
+  color: gold;
+}
+
+.contact-link:hover {
+
+  color: gold;
+
+  transform: scale(1.05);
+}
+
+/* Contact Section End Here  */
 
 /* Footer start  */
 
