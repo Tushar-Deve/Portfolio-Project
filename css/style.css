@@ -89,7 +89,7 @@
   border: 0.05rem solid black;
   border-radius: 0.25rem;
   background-color: white;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   opacity: 0;
   transform: scale(0.5);
   animation: popUpBtn 2s ease-out forwards;
@@ -154,12 +154,24 @@
   animation-delay: 3s;
 }
 
-.hero-section-para span:nth-child(7) {
+.hero-section-para span:nth-child(8) {
   animation-delay: 3.5s;
 }
 
-.hero-section-para span:nth-child(8) {
+.hero-section-para span:nth-child(9) {
   animation-delay: 4s;
+}
+
+.hero-section-para span:nth-child(10) {
+  animation-delay: 4.5s;
+}
+
+.hero-section-para span:nth-child(11) {
+  animation-delay: 5s;
+}
+
+.hero-section-para span:nth-child(12) {
+  animation-delay: 5.5s;
 }
 
 @keyframes popUp {
